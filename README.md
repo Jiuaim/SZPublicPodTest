@@ -5,11 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/SZPublicPodTest.svg?style=flat)](https://cocoapods.org/pods/SZPublicPodTest)
 [![Platform](https://img.shields.io/cocoapods/p/SZPublicPodTest.svg?style=flat)](https://cocoapods.org/pods/SZPublicPodTest)
 
-## Example
+## Somethings
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
+* A test repository for Cocoapods.
+* Involving interdependence.
 
 ## Installation
 
@@ -18,11 +17,13 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'SZPublicPodTest'
+pod 'SZPublicPodTest/Test1'
+pod 'SZPublicPodTest/Test2'
 ```
 
 ## Author
 
-hsz, shengzhong.huang@zhangmen.com
+Jiuaim, Jiuaim@163.com
 
 ## License
 
