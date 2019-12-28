@@ -6,12 +6,15 @@
 //  Copyright © 2019 hsz. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#ifndef SZTest_h
+#define SZTest_h
 
-NS_ASSUME_NONNULL_BEGIN
+#if __has_include(<SZPublicPodTest/SZTest.h>)
+#import <SZPublicPodTest/SZTest1.h>
+#import <SZPublicPodTest/SZTest2.h>
+#else
+#import "SZTest1.h"
+#import "SZTest2.h"
+#endif
 
-@interface SZTest : NSObject
-
-@end
-
-NS_ASSUME_NONNULL_END
+#endif /* SZTest_h */

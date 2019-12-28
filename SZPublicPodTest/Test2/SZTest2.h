@@ -1,5 +1,5 @@
 //
-//  SZTest1.h
+//  SZTest2.h
 //  test
 //
 //  Created by hsz on 2019/12/28.
@@ -7,10 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SZTest1 : NSObject
+@interface SZTest2 : NSObject
+
++ (void)addATestBlueViewInView:(UIView *)view frame:(CGRect)frame;
+
++ (UIView *)returnAView;
 
 @end
 

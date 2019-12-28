@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "SZTest.h"
 #import "SZTest1.h"
 #import "SZTest2.h"
 

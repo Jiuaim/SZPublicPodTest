@@ -7,6 +7,7 @@
 //
 
 #import "SZViewController.h"
+#import "SZTest.h"
 
 @interface SZViewController ()
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [SZTest1 addATestRedViewInView:self.view frame:CGRectMake(100, 100, 100, 100)];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

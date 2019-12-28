@@ -4,11 +4,11 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - SZPublicPodTest (0.1.0):
-    - SZPublicPodTest/Test1 (= 0.1.0)
-    - SZPublicPodTest/Test2 (= 0.1.0)
-  - SZPublicPodTest/Test1 (0.1.0)
-  - SZPublicPodTest/Test2 (0.1.0)
+  - SZPublicPodTest (0.1.2):
+    - SZPublicPodTest/Test1 (= 0.1.2)
+    - SZPublicPodTest/Test2 (= 0.1.2)
+  - SZPublicPodTest/Test1 (0.1.2)
+  - SZPublicPodTest/Test2 (0.1.2)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -24,7 +24,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  SZPublicPodTest: d308c62875084eb3950d93cd6c961f6ac746bf62
+  SZPublicPodTest: 4a4e2c6d2e68cf6a1ac5e9fa5b3f8103ae988e6c
 
 PODFILE CHECKSUM: 0999e6d024259bccb68fd260d1693897b08d837e
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SZPublicPodTest'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'what the fuck.'
 
 # This description is used to generate tags and improve search results.
@@ -30,19 +30,20 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  #s.source_files = 'SZPublicPodTest/SZTest.h'
-  #s.public_header_files = 'SZPublicPodTest/SZTest.h'
+  s.source_files = 'SZPublicPodTest/SZTest.h'
+  s.public_header_files = 'SZPublicPodTest/SZTest.h'
   
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   
   s.subspec 'Test1' do |test1|
-    test1.public_header_files = 'SZPublicPodTest/Classes/Test1/SZTest1.h'
-    test1.source_files = 'SZPublicPodTest/Classes/Test1/*.{h,m}'
+    test1.public_header_files = 'SZPublicPodTest/Test1/SZTest1.h'
+    test1.source_files = 'SZPublicPodTest/Test{1,2}/*.{h,m}'
+    #s.dependency 'SZPublicPodTest/Test2'
   end
   
   s.subspec 'Test2' do |test2|
-    test2.public_header_files = 'SZPublicPodTest/Classes/Test2/SZTest2.h'
-    test2.source_files = 'SZPublicPodTest/Classes/Test2/*.{h,m}'
+    test2.public_header_files = 'SZPublicPodTest/Test2/SZTest2.h'
+    test2.source_files = 'SZPublicPodTest/Test2/*.{h,m}'
   end
 end
