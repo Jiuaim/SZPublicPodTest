@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SZPublicPodTest'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of SZPublicPodTest.'
+  s.version          = '0.1.1'
+  s.summary          = 'what the fuck.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,22 +21,28 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/hsz/SZPublicPodTest'
+  s.homepage         = 'https://github.com/jiuaim/SZPublicPodTest'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'hsz' => 'shengzhong.huang@zhangmen.com' }
-  s.source           = { :git => 'https://github.com/hsz/SZPublicPodTest.git', :tag => s.version.to_s }
+  s.author           = { 'jiuaim' => 'jiuaim@163.com' }
+  s.source           = { :git => 'https://github.com/jiuaim/SZPublicPodTest.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'SZPublicPodTest/Classes/**/*'
+  #s.source_files = 'SZPublicPodTest/SZTest.h'
+  #s.public_header_files = 'SZPublicPodTest/SZTest.h'
   
-  # s.resource_bundles = {
-  #   'SZPublicPodTest' => ['SZPublicPodTest/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.subspec 'Test1' do |test1|
+    test1.public_header_files = 'SZPublicPodTest/Classes/Test1/SZTest1.h'
+    test1.source_files = 'SZPublicPodTest/Classes/Test1/*.{h,m}'
+  end
+  
+  s.subspec 'Test2' do |test2|
+    test2.public_header_files = 'SZPublicPodTest/Classes/Test2/SZTest2.h'
+    test2.source_files = 'SZPublicPodTest/Classes/Test2/*.{h,m}'
+  end
 end
