@@ -24,7 +24,12 @@
     {
       "name": "Test1",
       "public_header_files": "SZPublicPodTest/Test1/SZTest1.h",
-      "source_files": "SZPublicPodTest/Test{1,2}/*.{h,m}"
+      "source_files": "SZPublicPodTest/Test1/*.{h,m}",
+      "dependencies": {
+        "SZPublicPodTest/Test2": [
+
+        ]
+      }
     },
     {
       "name": "Test2",
