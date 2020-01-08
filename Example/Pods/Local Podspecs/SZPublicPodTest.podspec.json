@@ -1,6 +1,6 @@
 {
   "name": "SZPublicPodTest",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "summary": "what the fuck.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/jiuaim/SZPublicPodTest",
@@ -13,13 +13,18 @@
   },
   "source": {
     "git": "https://github.com/jiuaim/SZPublicPodTest.git",
-    "tag": "0.1.2"
+    "tag": "0.1.3"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "SZPublicPodTest/SZTest.h",
   "public_header_files": "SZPublicPodTest/SZTest.h",
+  "dependencies": {
+    "Masonry": [
+      "1.1.0"
+    ]
+  },
   "subspecs": [
     {
       "name": "Test1",

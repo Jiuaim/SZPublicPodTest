@@ -4,12 +4,16 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - SZPublicPodTest (0.1.2):
-    - SZPublicPodTest/Test1 (= 0.1.2)
-    - SZPublicPodTest/Test2 (= 0.1.2)
-  - SZPublicPodTest/Test1 (0.1.2):
+  - Masonry (1.1.0)
+  - SZPublicPodTest (0.1.3):
+    - Masonry (= 1.1.0)
+    - SZPublicPodTest/Test1 (= 0.1.3)
+    - SZPublicPodTest/Test2 (= 0.1.3)
+  - SZPublicPodTest/Test1 (0.1.3):
+    - Masonry (= 1.1.0)
     - SZPublicPodTest/Test2
-  - SZPublicPodTest/Test2 (0.1.2)
+  - SZPublicPodTest/Test2 (0.1.3):
+    - Masonry (= 1.1.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -18,6 +22,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - FBSnapshotTestCase
+    - Masonry
 
 EXTERNAL SOURCES:
   SZPublicPodTest:
@@ -25,7 +30,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  SZPublicPodTest: e0ec255a05ca74fcf0ec6f00e274e02eb9f7f9ee
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SZPublicPodTest: aba2af39a09ed2429f20790f36bb20d36257327e
 
 PODFILE CHECKSUM: 0999e6d024259bccb68fd260d1693897b08d837e
 

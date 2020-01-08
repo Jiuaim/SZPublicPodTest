@@ -32,7 +32,7 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'SZPublicPodTest/SZTest.h'
   s.public_header_files = 'SZPublicPodTest/SZTest.h'
-  
+  s.dependency 'Masonry', '1.1.0'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   
