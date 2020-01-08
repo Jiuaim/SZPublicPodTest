@@ -10,7 +10,7 @@ env:
     - LANG=en_US.UTF-8
     - LC_ALL=en_US.UTF-8
     - XCODE_WORKSPACE=Example/SZPublicPodTest.xcworkspace
-    - DESTINATION="platform=iOS Simulator,name=iPhone XS"
+    - DESTINATION="platform=iOS Simulator,OS=11.3,name=iPhone X"
   matrix:
     - SCHEME="SZPublicPodTest-Example"
 
