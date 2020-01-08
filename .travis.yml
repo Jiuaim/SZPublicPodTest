@@ -22,7 +22,9 @@ before_install:
 script:
 #- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/SZPublicPodTest.xcworkspace -scheme SZPublicPodTest-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
 #- pod lib lint
-- set -o pipefail
-- xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$SCHEME" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
+#- set -o pipefail
+#- xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$SCHEME" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
 #- xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$SCHEME" -destination "$DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
-- pod lib lint --allow-warnings
+#- pod lib lint --allow-warnings
+- set -o pipefail
+  - xcodebuild -workspace "$XCODE_PROJECT" -scheme "$SCHEME" -configuration Debug clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -c
