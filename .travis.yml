@@ -10,7 +10,7 @@ env:
     - LANG=en_US.UTF-8
     - LC_ALL=en_US.UTF-8
     - XCODE_WORKSPACE=Example/SZPublicPodTest.xcworkspace
-    - DESTINATION="platform=iOS Simulator,name=iPhone X"
+    - DESTINATION="platform=iOS Simulator,name=iPhone 11"
     - SDK="iphonesimulator13.0"
     - CODECOV_TOKEN="7a87ae23-dc3c-4ad3-84a6-4631c7b5295d"
   matrix:
