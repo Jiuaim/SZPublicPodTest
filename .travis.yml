@@ -35,4 +35,4 @@ script:
 
 after_success:
     - sleep 5
-    - bash <(curl -s https://codecov.io/bash) -t :"$CODECOV_TOKEN"
+    - bash <(curl -s https://codecov.io/bash)
