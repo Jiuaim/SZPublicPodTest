@@ -31,8 +31,8 @@
 
 - (void)testExample
 {
-    [SZTest1 addATestRedViewInView:[UIView new] frame:CGRectMake(0, 0, 100, 100)];
-    [SZTest2 addATestBlueViewInView:[UIView new] frame:CGRectMake(100, 100, 100, 100)];
+//    [SZTest1 addATestRedViewInView:[UIView new] frame:CGRectMake(0, 0, 100, 100)];
+//    [SZTest2 addATestBlueViewInView:[UIView new] frame:CGRectMake(100, 100, 100, 100)];
     XCTAssertEqual(1, 1, @"相等");
 }
 

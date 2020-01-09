@@ -19,7 +19,7 @@
 {
     [super viewDidLoad];
     
-    [SZTest1 addATestRedViewInView:self.view frame:CGRectMake(100, 100, 100, 100)];
+//    [SZTest1 addATestRedViewInView:self.view frame:CGRectMake(100, 100, 100, 100)];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
