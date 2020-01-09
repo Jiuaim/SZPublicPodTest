@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/SZPublicPodTest.svg?style=flat)](https://cocoapods.org/pods/SZPublicPodTest)
 [![License](https://img.shields.io/cocoapods/l/SZPublicPodTest.svg?style=flat)](https://cocoapods.org/pods/SZPublicPodTest)
 [![Platform](https://img.shields.io/cocoapods/p/SZPublicPodTest.svg?style=flat)](https://cocoapods.org/pods/SZPublicPodTest)
+[![codecov](https://codecov.io/gh/Jiuaim/SZPublicPodTest/branch/master/graph/badge.svg)](https://codecov.io/gh/Jiuaim/SZPublicPodTest)
 
 ## Somethings
 
