@@ -31,7 +31,7 @@ script:
     - set -o pipefail
     - xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -configuration Debug clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -c
 #    - xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$SCHEME" build test -sdk "$SDK" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
-    - xcodebuild test -enableCodeCoverage YES -workspace "$XCODE_WORKSPACE" -scheme "$SCHEME" -destination "$DESTINATION" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES ONLY_ACTIVE_ARCH=NO | xcpretty
+    - xcodebuild test -enableCodeCoverage YES -project Framework/SZPublicPodUITest.xcodeproj -scheme SZPublicPodUITest -destination "$DESTINATION" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES ONLY_ACTIVE_ARCH=NO | xcpretty
 
 after_success:
     - sleep 5
