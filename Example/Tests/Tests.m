@@ -6,9 +6,12 @@
 //  Copyright (c) 2019 hsz. All rights reserved.
 //
 
+#import "SZTest.h"
 @import XCTest;
 
 @interface Tests : XCTestCase
+
+@property (nonatomic, strong) UIView *readView;
 
 @end
 
@@ -28,7 +31,7 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    XCTAssertEqual(1, 1, @"相等");
 }
 
 @end
