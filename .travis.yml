@@ -2,38 +2,60 @@
 # * https://www.objc.io/issues/6-build-tools/travis-ci/
 # * https://github.com/supermarin/xcpretty#usage
 
-osx_image: xcode11
-language: objective-c
-
-env:
-  global:
-    - LANG=en_US.UTF-8
-    - LC_ALL=en_US.UTF-8
-#    - XCODE_WORKSPACE=Example/SZPublicPodTest.xcworkspace
-    - DESTINATION="platform=iOS Simulator,name=iPhone 11"
-    - SDK="iphonesimulator13.0"
-    - CODECOV_TOKEN="7a87ae23-dc3c-4ad3-84a6-4631c7b5295d"
+#osx_image: xcode11
+#language: objective-c
+#
+#env:
+#  global:
+#    - LANG=en_US.UTF-8
+#    - LC_ALL=en_US.UTF-8
+##    - XCODE_WORKSPACE=Example/SZPublicPodTest.xcworkspace
+#    - DESTINATION="platform=iOS Simulator,name=iPhone 11"
+#    - SDK="iphonesimulator13.0"
+#    - CODECOV_TOKEN="7a87ae23-dc3c-4ad3-84a6-4631c7b5295d"
 #  matrix:
-#    - SCHEME="SZPublicPodTest-Example"
-
+##    - SCHEME="SZPublicPodTest-Example"
+#
 #before_install:
 #  - gem install xcpretty --no-document --quiet
 #  - gem install cocoapods --pre --no-document --quiet
 #  - pod install --project-directory=Example
+#
+#script:
+##- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/SZPublicPodTest.xcworkspace -scheme SZPublicPodTest-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
+##- pod lib lint
+##- set -o pipefail
+##- xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$SCHEME" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
+##- xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$SCHEME" -destination "$DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
+##- pod lib lint --allow-warnings
+#    - set -o pipefail
+#    - xcodebuild -workspace Example/SZPublicPodTest.xcworkspace -scheme SZPublicPodTest-Example -sdk "$SDK" -configuration Debug clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -c
+##    - xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$SCHEME" build test -sdk "$SDK" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
+#    - xcodebuild test -enableCodeCoverage YES -project Framework/SZPublicPodUITest.xcodeproj -scheme SZPublicPodUITest -destination "$DESTINATION" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES ONLY_ACTIVE_ARCH=NO | xcpretty
+#
+#after_success:
+#    - sleep 5
+#    - bash <(curl -s https://codecov.io/bash)
+
+
+
+
+language: objective-c
+osx_image: xcode8
+xcode_project: Framework/SZPublicPodUITest.xcodeproj
+xcode_scheme: SZPublicPodUITest
+
+before_install:
+- env
+- xcodebuild -version
+- xcodebuild -showsdks
+- xcpretty --version
+- xcrun instruments -w 'iPhone 7' || sleep 15
 
 script:
-#- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/SZPublicPodTest.xcworkspace -scheme SZPublicPodTest-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
-#- pod lib lint
-#- set -o pipefail
-#- xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$SCHEME" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
-#- xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$SCHEME" -destination "$DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
-#- pod lib lint --allow-warnings
-    - set -o pipefail
-#    - xcodebuild -workspace Example/SZPublicPodTest.xcworkspace -scheme SZPublicPodTest-Example -sdk "$SDK" -configuration Debug clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -c
-    - xcodebuild -project Framework/SZPublicPodUITest.xcodeproj -scheme SZPublicPodUITest -sdk "$SDK" -configuration Debug clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -c
-#    - xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$SCHEME" build test -sdk "$SDK" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
-    - xcodebuild test -enableCodeCoverage YES -project Framework/SZPublicPodUITest.xcodeproj -scheme SZPublicPodUITestTests -sdk "$SDK" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail
+- xcodebuild clean build -project "$TRAVIS_XCODE_PROJECT"  -scheme "$TRAVIS_XCODE_SCHEME" | xcpretty
+- xcodebuild test -project "$TRAVIS_XCODE_PROJECT" -scheme "$TRAVIS_XCODE_SCHEME" -destination "name=iPhone 7" -enableCodeCoverage YES | xcpretty
 
 after_success:
-    - sleep 5
-    - bash <(curl -s https://codecov.io/bash)
+- bash <(curl -s https://codecov.io/bash)
