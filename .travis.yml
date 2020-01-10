@@ -13,13 +13,13 @@ env:
     - DESTINATION="platform=iOS Simulator,name=iPhone 11"
     - SDK="iphonesimulator13.0"
     - CODECOV_TOKEN="7a87ae23-dc3c-4ad3-84a6-4631c7b5295d"
-  matrix:
+#  matrix:
 #    - SCHEME="SZPublicPodTest-Example"
 
-before_install:
-  - gem install xcpretty --no-document --quiet
-  - gem install cocoapods --pre --no-document --quiet
-  - pod install --project-directory=Example
+#before_install:
+#  - gem install xcpretty --no-document --quiet
+#  - gem install cocoapods --pre --no-document --quiet
+#  - pod install --project-directory=Example
 
 script:
 #- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/SZPublicPodTest.xcworkspace -scheme SZPublicPodTest-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
