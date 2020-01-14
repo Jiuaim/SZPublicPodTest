@@ -1,6 +1,0 @@
-framework module SZPublicPodTest {
-  umbrella header "SZPublicPodTest-umbrella.h"
-
-  export *
-  module * { export * }
-}
