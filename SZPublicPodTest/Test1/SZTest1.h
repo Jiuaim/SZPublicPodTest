@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)addATestRedViewInView:(UIView *)view frame:(CGRect)frame;
 
++ (void)addATest1ImageWithImageName:(NSString *)imageName parentView:(UIView *)parentView;
+
 @end
 
 NS_ASSUME_NONNULL_END

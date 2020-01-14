@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SZPublicPodTest'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'what the fuck.'
 
 # This description is used to generate tags and improve search results.
@@ -32,6 +32,10 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'SZPublicPodTest/SZTest.h'
   s.public_header_files = 'SZPublicPodTest/SZTest.h'
+  s.resource_bundles = {
+    'SZPublicPodTest1' => ['SZPublicPodTest/Assets/Test1/*'],
+    'SZPublicPodTest2' => ['SZPublicPodTest/Assets/Test2/*']
+  }
 #  s.dependency 'Masonry', '1.1.0'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
@@ -41,10 +45,16 @@ TODO: Add long description of the pod here.
 #    test1.source_files = 'SZPublicPodTest/Test{1,2}/*.{h,m}'
     test1.source_files = 'SZPublicPodTest/Test1/*.{h,m}'
     test1.dependency 'SZPublicPodTest/Test2'
+    test1.resource_bundles = {
+      'SZPublicPodTest1' => ['SZPublicPodTest/Assets/Test1/*']
+    }
   end
   
   s.subspec 'Test2' do |test2|
     test2.public_header_files = 'SZPublicPodTest/Test2/SZTest2.h'
     test2.source_files = 'SZPublicPodTest/Test2/*.{h,m}'
+    test2.resource_bundles = {
+      'SZPublicPodTest2' => ['SZPublicPodTest/Assets/Test2/*']
+    }
   end
 end

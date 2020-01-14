@@ -20,6 +20,8 @@
     [super viewDidLoad];
     
 //    [SZTest1 addATestRedViewInView:self.view frame:CGRectMake(100, 100, 100, 100)];
+    [SZTest1 addATest1ImageWithImageName:@"" parentView:self.view];
+    [SZTest2 addATest2ImageWithImageName:@"" parentView:self.view];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
