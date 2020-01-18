@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		214333A623D2DD8600DA4153 /* SZPublicPodTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2143339D23D2DD8600DA4153 /* SZPublicPodTest.framework */; };
 		214333AB23D2DD8600DA4153 /* SZPublicPodTest_frameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 214333AA23D2DD8600DA4153 /* SZPublicPodTest_frameworkTests.m */; };
-		214333BB23D2DE4800DA4153 /* SZTest2.h in Headers */ = {isa = PBXBuildFile; fileRef = 214333B523D2DE4800DA4153 /* SZTest2.h */; };
+		214333BB23D2DE4800DA4153 /* SZTest2.h in Headers */ = {isa = PBXBuildFile; fileRef = 214333B523D2DE4800DA4153 /* SZTest2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		214333BC23D2DE4800DA4153 /* SZTest2.m in Sources */ = {isa = PBXBuildFile; fileRef = 214333B623D2DE4800DA4153 /* SZTest2.m */; };
-		214333BE23D2DE4800DA4153 /* SZTest1.h in Headers */ = {isa = PBXBuildFile; fileRef = 214333B923D2DE4800DA4153 /* SZTest1.h */; };
+		214333BE23D2DE4800DA4153 /* SZTest1.h in Headers */ = {isa = PBXBuildFile; fileRef = 214333B923D2DE4800DA4153 /* SZTest1.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		214333BF23D2DE4800DA4153 /* SZTest1.m in Sources */ = {isa = PBXBuildFile; fileRef = 214333BA23D2DE4800DA4153 /* SZTest1.m */; };
 		214333C123D2DE5A00DA4153 /* SZPublicPodTest.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 214333C023D2DE5A00DA4153 /* SZPublicPodTest.podspec */; };
 		214333D023D2EF0600DA4153 /* SZPublicPodTest1.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 214333CE23D2EF0500DA4153 /* SZPublicPodTest1.bundle */; };
