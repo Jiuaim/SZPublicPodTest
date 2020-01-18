@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		2176B8E623C741FF00DF6C4E /* SZPublicPodUITest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2176B8DC23C741FF00DF6C4E /* SZPublicPodUITest.framework */; };
 		2176B8EB23C741FF00DF6C4E /* SZPublicPodUITestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2176B8EA23C741FF00DF6C4E /* SZPublicPodUITestTests.m */; };
-		2176B8FE23C742C900DF6C4E /* SZTest1.h in Headers */ = {isa = PBXBuildFile; fileRef = 2176B8F823C742C800DF6C4E /* SZTest1.h */; };
+		2176B8FE23C742C900DF6C4E /* SZTest1.h in Headers */ = {isa = PBXBuildFile; fileRef = 2176B8F823C742C800DF6C4E /* SZTest1.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2176B8FF23C742C900DF6C4E /* SZTest1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2176B8F923C742C800DF6C4E /* SZTest1.m */; };
-		2176B90023C742C900DF6C4E /* SZTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 2176B8FA23C742C800DF6C4E /* SZTest.h */; };
-		2176B90123C742C900DF6C4E /* SZTest2.h in Headers */ = {isa = PBXBuildFile; fileRef = 2176B8FC23C742C800DF6C4E /* SZTest2.h */; };
+		2176B90023C742C900DF6C4E /* SZTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 2176B8FA23C742C800DF6C4E /* SZTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2176B90123C742C900DF6C4E /* SZTest2.h in Headers */ = {isa = PBXBuildFile; fileRef = 2176B8FC23C742C800DF6C4E /* SZTest2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2176B90223C742C900DF6C4E /* SZTest2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2176B8FD23C742C800DF6C4E /* SZTest2.m */; };
 /* End PBXBuildFile section */
 
