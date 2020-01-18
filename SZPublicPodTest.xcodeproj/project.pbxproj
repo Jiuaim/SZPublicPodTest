@@ -11,8 +11,8 @@
 		214333AB23D2DD8600DA4153 /* SZPublicPodTest_frameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 214333AA23D2DD8600DA4153 /* SZPublicPodTest_frameworkTests.m */; };
 		214333BB23D2DE4800DA4153 /* SZTest2.h in Headers */ = {isa = PBXBuildFile; fileRef = 214333B523D2DE4800DA4153 /* SZTest2.h */; };
 		214333BC23D2DE4800DA4153 /* SZTest2.m in Sources */ = {isa = PBXBuildFile; fileRef = 214333B623D2DE4800DA4153 /* SZTest2.m */; };
-		214333BD23D2DE4800DA4153 /* SZTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 214333B723D2DE4800DA4153 /* SZTest.h */; };
-		214333BE23D2DE4800DA4153 /* SZTest1.h in Headers */ = {isa = PBXBuildFile; fileRef = 214333B923D2DE4800DA4153 /* SZTest1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		214333BD23D2DE4800DA4153 /* SZTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 214333B723D2DE4800DA4153 /* SZTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		214333BE23D2DE4800DA4153 /* SZTest1.h in Headers */ = {isa = PBXBuildFile; fileRef = 214333B923D2DE4800DA4153 /* SZTest1.h */; };
 		214333BF23D2DE4800DA4153 /* SZTest1.m in Sources */ = {isa = PBXBuildFile; fileRef = 214333BA23D2DE4800DA4153 /* SZTest1.m */; };
 		214333C123D2DE5A00DA4153 /* SZPublicPodTest.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 214333C023D2DE5A00DA4153 /* SZPublicPodTest.podspec */; };
 /* End PBXBuildFile section */
@@ -38,7 +38,7 @@
 		214333B723D2DE4800DA4153 /* SZTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZTest.h; path = SZPublicPodTest/SZTest.h; sourceTree = SOURCE_ROOT; };
 		214333B923D2DE4800DA4153 /* SZTest1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZTest1.h; sourceTree = "<group>"; };
 		214333BA23D2DE4800DA4153 /* SZTest1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZTest1.m; sourceTree = "<group>"; };
-		214333C023D2DE5A00DA4153 /* SZPublicPodTest.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = SZPublicPodTest.podspec; sourceTree = SOURCE_ROOT; };
+		214333C023D2DE5A00DA4153 /* SZPublicPodTest.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SZPublicPodTest.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,9 +126,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				214333BE23D2DE4800DA4153 /* SZTest1.h in Headers */,
-				214333BB23D2DE4800DA4153 /* SZTest2.h in Headers */,
 				214333BD23D2DE4800DA4153 /* SZTest.h in Headers */,
+				214333BB23D2DE4800DA4153 /* SZTest2.h in Headers */,
+				214333BE23D2DE4800DA4153 /* SZTest1.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
