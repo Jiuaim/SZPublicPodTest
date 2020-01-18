@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2143339C23D2DD8600DA4153"
-               BuildableName = "SZPublicPodTest_framework.framework"
-               BlueprintName = "SZPublicPodTest-framework"
+               BuildableName = "SZPublicPodTest.framework"
+               BlueprintName = "SZPublicPodTest"
                ReferencedContainer = "container:SZPublicPodTest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -61,8 +61,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2143339C23D2DD8600DA4153"
-            BuildableName = "SZPublicPodTest_framework.framework"
-            BlueprintName = "SZPublicPodTest-framework"
+            BuildableName = "SZPublicPodTest.framework"
+            BlueprintName = "SZPublicPodTest"
             ReferencedContainer = "container:SZPublicPodTest.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
