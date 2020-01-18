@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1120"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2176B8DB23C741FF00DF6C4E"
-               BuildableName = "SZPublicPodUITest.framework"
-               BlueprintName = "SZPublicPodUITest"
-               ReferencedContainer = "container:SZPublicPodUITest.xcodeproj">
+               BlueprintIdentifier = "2143339C23D2DD8600DA4153"
+               BuildableName = "SZPublicPodTest_framework.framework"
+               BlueprintName = "SZPublicPodTest-framework"
+               ReferencedContainer = "container:SZPublicPodTest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,17 +26,16 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2176B8E423C741FF00DF6C4E"
-               BuildableName = "SZPublicPodUITestTests.xctest"
-               BlueprintName = "SZPublicPodUITestTests"
-               ReferencedContainer = "container:SZPublicPodUITest.xcodeproj">
+               BlueprintIdentifier = "214333A423D2DD8600DA4153"
+               BuildableName = "SZPublicPodTest-frameworkTests.xctest"
+               BlueprintName = "SZPublicPodTest-frameworkTests"
+               ReferencedContainer = "container:SZPublicPodTest.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -61,10 +60,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2176B8DB23C741FF00DF6C4E"
-            BuildableName = "SZPublicPodUITest.framework"
-            BlueprintName = "SZPublicPodUITest"
-            ReferencedContainer = "container:SZPublicPodUITest.xcodeproj">
+            BlueprintIdentifier = "2143339C23D2DD8600DA4153"
+            BuildableName = "SZPublicPodTest_framework.framework"
+            BlueprintName = "SZPublicPodTest-framework"
+            ReferencedContainer = "container:SZPublicPodTest.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
