@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SZPublicPodTest'
-  s.version          = '0.2.3'
+  s.version          = '0.2.4'
   s.summary          = 'what the fuck.'
 
 # This description is used to generate tags and improve search results.
@@ -48,7 +48,7 @@ TODO: Add long description of the pod here.
 #    test1.resource_bundles = {
 #      'SZPublicPodTest1' => ['SZPublicPodTest/Assets/Test1/*']
 #    }
-    test1.resource_bundles = 'SZPublicPodTest/Assets/SZPublicPodTest1.bundle'
+    test1.resource = 'SZPublicPodTest/Assets/SZPublicPodTest1.bundle'
   end
   
   s.subspec 'Test2' do |test2|
@@ -57,6 +57,6 @@ TODO: Add long description of the pod here.
 #    test2.resource_bundles = {
 #      'SZPublicPodTest2' => ['SZPublicPodTest/Assets/Test2/*']
 #    }
-    test2.resource_bundles = 'SZPublicPodTest/Assets/SZPublicPodTest2.bundle'
+    test2.resource = 'SZPublicPodTest/Assets/SZPublicPodTest2.bundle'
   end
 end
